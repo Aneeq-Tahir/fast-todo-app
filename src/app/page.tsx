@@ -1,7 +1,7 @@
 const API_ENDPOINT =
    process.env.NODE_ENV === "development"
       ? "http://localhost:8000"
-      : `${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
+      : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
 
 export default async function Home() {
    const data = await fetch(`${API_ENDPOINT}/status`);
