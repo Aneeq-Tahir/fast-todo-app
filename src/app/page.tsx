@@ -1,5 +1,7 @@
 const API_ENDPOINT =
-   process.env.NODE_ENV === "development" ? "http://localhost:8000" : "/api";
+   process.env.NODE_ENV === "development"
+      ? "http://localhost:8000"
+      : `${process.env.NEXT_PUBLIC_VERCEL_URL}/api`;
 
 export default async function Home() {
    const data = await fetch(`${API_ENDPOINT}/status`);
@@ -7,7 +9,7 @@ export default async function Home() {
    console.log(API_ENDPOINT);
    return (
       <main>
-         <div className="">{fastData}</div>
+         <div className="">{...Object.values(fastData)}</div>
       </main>
    );
 }

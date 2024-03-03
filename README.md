@@ -81,7 +81,7 @@ uvicorn --app-dir api index:app --reload
 ### open a new terminal window write following command
 
 ```shell
-httpie localhost:8000
+http localhost:8000
 ```
 
 > OUTPUT

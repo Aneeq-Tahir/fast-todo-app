@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "fast-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
+    "next-dev": "next dev",
     "dev": "concurrently \"pnpm next-dev\" \"pnpm fast-dev\"",
-    "fast-dev": "pip install -r requirements.txt && uvicorn --app-dir api index:app --reload",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "next-dev": "next dev"
+    "lint": "next lint"
   },
   "dependencies": {
     "concurrently": "^8.2.2",
