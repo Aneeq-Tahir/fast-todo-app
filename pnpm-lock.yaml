@@ -12,10 +12,10 @@ dependencies:
     specifier: 14.1.1
     version: 14.1.1(react-dom@18.2.0)(react@18.2.0)
   react:
-    specifier: ^18
+    specifier: ^18.2.0
     version: 18.2.0
   react-dom:
-    specifier: ^18
+    specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
 
 devDependencies:
@@ -23,10 +23,10 @@ devDependencies:
     specifier: ^20
     version: 20.11.24
   '@types/react':
-    specifier: ^18
+    specifier: ^18.2.61
     version: 18.2.61
   '@types/react-dom':
-    specifier: ^18
+    specifier: ^18.2.19
     version: 18.2.19
   autoprefixer:
     specifier: ^10.0.1
